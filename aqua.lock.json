@@ -1,0 +1,17 @@
+{
+  "Format": 1,
+  "ManifestHash": "ea4366ba0f2e7a3357bb50ed7841cca2010115e545efea694c7223ff2cc61a91",
+  "Direct": {
+    "Aqua_OpenCV": "aqua_opencv/1.1.1"
+  },
+  "Packages": [
+    {
+      "Name": "Aqua_OpenCV",
+      "Version": "1.1.1",
+      "Hash": "9ebc5f2a0f77e088ce94183ca4ed120f844ce7dd66363da3f9d581961a6bf534",
+      "Source": "path:C:\\OfficialProjects\\Aqua_OpenCV\\aqua.toml",
+      "Dependencies": {},
+      "Key": "aqua_opencv/1.1.1"
+    }
+  ]
+}

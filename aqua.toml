@@ -1,0 +1,13 @@
+manifest_version = 1
+[project]
+name = "Aqua_OpenCV_Showcase"
+type = "executable"
+version = "1.1.1"
+entry = "主程式.aqua"
+sources = ["主程式.aqua", "功能清單.aqua", "功能驗證.aqua", "雙語驗證.aqua"]
+platforms = ["windows", "linux", "macos", "web", "android"]
+description = "以繁體中文腳本與介面展示 45 項 OpenCV 視覺功能。"
+[dependencies]
+[dependencies.Aqua_OpenCV]
+version = "1.1.1"
+path = "../Aqua_OpenCV/aqua.toml"
