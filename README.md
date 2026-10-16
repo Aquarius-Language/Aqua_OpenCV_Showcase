@@ -12,6 +12,10 @@
 
 腳本預設使用相鄰 AquariusLangTW 中更新的開發編譯器，也保留 `-Run`、`-Smoke`、`-Platform`、`-Compiler` 英文別名。可用 `-編譯器 aqua` 選擇已更新的全域 CLI。依賴由 `aqua.lock.json` 固定版本；快取完整時可用 `aqua build . --locked --offline --platform windows -o dist/showcase.wasm`。
 
+GitHub Pages 部署使用已提交的 `web-zh/` 網頁輸出；本機建置的 `web/` 目錄已列入 `.gitignore`。請先在儲存庫的 **Settings → Pages → Build and deployment → Source** 選擇 **GitHub Actions**。推送 `web-zh/` 或部署工作流程的變更至 `main` 後，會自動發布網站；也可在 **Actions → Deploy web output to GitHub Pages → Run workflow** 手動部署。工作流程完成後，部署環境會顯示網站連結。
+
+更新網站時，先執行 `./build.ps1 -平台 web`，再以新的 `web/` 完整輸出取代 `web-zh/` 的內容並提交。部署工作流程直接發布這份輸出，不會重新編譯 Aqua 原始碼。
+
 左側分三頁列出 45 項功能。點選功能或按左右方向鍵切換，使用滑桿調整閾值與旋轉角度，按「核心」切換奇數核心大小。空白鍵或「重新處理」再次執行演算法。可開啟自己的影像、儲存 PNG，或重設內附範例。人臉與神經網路範例預設使用內附肖像。
 
 功能涵蓋色彩、濾鏡、邊緣、形態學、分割、增強、幾何、形狀偵測、特徵匹配、修復、頻域、運動、人臉、QR 碼與三維視覺。灰色項目表示目前後端未提供該功能。光流、視差及姿態範例使用已知的合成資料；姿態展示使用 solvePnP，不代表已完成真實相機的校正程序。全景拼接使用具有固定紋理的重疊影像。
